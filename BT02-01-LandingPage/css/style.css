@@ -1,0 +1,192 @@
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+#container {
+	width: 75%;
+	margin: 10px auto;
+	background: white;
+	overflow: auto;
+}
+
+header#main-header {
+	border-bottom: 4px solid #4ea0d8;
+	padding-bottom: 10px;
+}
+
+p {
+	/*margin: 10px 0;
+	line-height: 1.5em;*/
+}
+
+h1 {
+	font-size: 2.5em;
+	font-weight: bold;
+	margin: 20px 0 30px;
+}
+
+h3 {
+	font-size: 1.7em;
+	margin: 10px 0;
+}
+
+h4 {
+	font-size: 1.3em;
+	margin: 10px 0;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.clearfix {
+	clear: both;
+}
+
+img#logo {
+	display: block;
+	margin: auto;
+}
+
+#main-text {
+	text-align: center;
+	color: #333;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+#sub-1 {
+	float: left;
+	width: 48%;
+}
+
+#sub-2 {
+	float: right;
+	width: 48%;
+}
+
+.points li {
+	margin-bottom: 30px;
+}
+
+.points img {
+	float: left;
+	margin-right: 8px;
+}
+
+.points h4 {
+	padding-top: 5px;
+}
+
+#contact-form {
+	margin-top: 20px;
+	padding: 15px;
+	border: 4px solid #4ea0d8;
+	border-radius: 10px;
+	background: #f4f4f4;
+}
+
+#contact-form div {
+	margin-bottom: 20px;
+}
+
+#contact-form label {
+	display: inline-block;
+	width: 100px;
+	font-weight: bold;
+}
+
+#contact-form input[type='text'], #contact-form input[type='email'] {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	height: 25px;
+	width: 65%
+}
+
+#contact-form input[type='submit'] {
+	padding: 12px 15px;
+	color: white;
+	background: #ff9e3e;
+	border: 0;
+	border-radius: 5px;
+	display: block;
+	float: right;
+}
+
+#contact-form input[type='submit']:hover	{
+	background: #d55427;
+	cursor: pointer;
+}
+
+#contact-form .content-footer p {
+	font-style: italic;
+	text-align: center;
+	color: #666;
+	font-size: 0.8em;
+}
+
+.content-header {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+
+.content-footer {
+	border-top: 1px solid #ddd;
+	margin-top: 40px;
+	padding-top: 10px;
+}
+
+#testimonial {
+	margin: 60px 0;
+	font-style: italic;
+	color: #666;
+}
+
+#testimonial img {
+	float: left;
+	margin-right: 20px;
+}
+
+footer#main-footer {
+	border-top: 1px solid #ccc;
+	text-align: center;
+	color: #aaa;
+	padding-top: 10px;
+}
+
+@media (max-width: 960px) {
+	#container {
+		width: 80%;	
+	}
+	
+	h1 {
+		font-size: 2em;	
+	}
+	
+	#sub-1, #sub-2 {
+		float: none;
+		width: 100%;	
+	}
+	
+	.points li {
+		background: #eee;
+		padding: 0 10px 8px 10px;
+		border-radius: 10px;	
+	}
+	
+	#testimonial img {
+		float: none;
+		display: block;
+		margin: auto;
+		margin-bottom: 20px;	
+	}
+}
+
+@media (max-width: 600px) {
+	h1 {
+		font-size: 1.5em;	
+	}
+}

@@ -1,0 +1,164 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family: "Arial", sans-serif;
+	background: #d9e0e5;
+}
+
+p {
+	margin: 10px 0;
+}
+
+.container {
+	width: 85%;
+	margin: 0 auto;
+}
+
+header {
+	background: #5e6482;
+	height: 55px;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#timeline {
+	background: url(../img/line.png) repeat-y center top;
+	min-height: 700px;
+	margin: 20px 0;
+}
+
+.tl-block {
+	position: relative;
+	width: 100%;
+	min-height: 100px;
+	margin-bottom: 20px;
+}
+
+.tl-year {
+	background: url(../img/point-big.png) no-repeat center 0;
+	display: block;
+	width: 100px;
+	height: 70px;
+	text-align: center;
+	margin: 20px auto auto auto;
+}
+
+.tl-year div {
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	display: block;
+	padding-top: 23px;
+	text-align: center;
+}
+
+.tl-event {
+	background: url(../img/point-small.png) no-repeat center top;
+	margin: auto;
+	width: 100%;
+	overflow: hidden;
+	visibility: visible;
+}
+
+.tl-event > div {				/* get both event-l and event-r divs */
+	width: 45%;
+	position: relative;
+}
+
+.tl-event div div {
+	background: white;
+	border-radius: 10px;
+	padding: 15px;
+}
+
+.tl-event div.event-r {	/* arrow will be covered by .tl-event div div */
+	float: right;
+	background: url(../img/arrow-left.png) no-repeat left top;
+	-webkit-animation: fade 7s 1;
+}
+
+.tl-event div.event-l {	/* arrow will be covered by .tl-event div div */
+	float: left;
+	background: url(../img/arrow-right.png) no-repeat right top;
+	-webkit-animation: fade 7s 1;
+}
+
+@-webkit-keyframes fade {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.tl-event div.event-r div {
+	margin-left: 20px;			/* use margin to show arrow */ 
+}
+
+.tl-event div.event-l div {
+	margin-right: 20px;			/* use margin to show arrow */ 
+}
+
+.tl-event time {
+	background: #c03b44;
+	color: white;
+	font-size: 12px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.tl-event h4 {
+	margin-top: 10px;
+}
+
+footer {
+	background: #5e6482;
+	height: 40px;
+	color: white;
+	text-align: center;
+	padding: 10px 0;
+}
+
+@media (max-width:768px) {
+	.container {
+		width: 90%;	
+	}
+	
+	header {
+		height: 50px;		
+	}
+	
+	h1 {
+		font-size: 23px;	
+	}
+	
+	#timeline {
+		background: url(../img/line.png) repeat-y 45px top;
+	}
+	
+	.tl-year {
+		background: url(../img/point-big.png) no-repeat left top;
+		text-align: left;
+		margin: 0;
+	}
+	
+	.tl-event {
+		background: url(../img/point-small.png) no-repeat 31px top;
+	}
+	
+	.tl-event div {
+		width: 85%;
+		position: relative;	
+	}
+	
+	.tl-event div.event-l {		/* move left-side divs to the right */
+		float: right;
+		background: url(../img/arrow-left.png) no-repeat left top;
+	}
+	
+	.tl-event div.event-l div {	/* change margin to show arrow */
+		margin-left: 20px;
+		margin-right: 0;	
+	}
+}

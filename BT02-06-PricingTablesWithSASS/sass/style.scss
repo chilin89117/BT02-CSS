@@ -1,0 +1,123 @@
+/* include config */
+@import "config.scss";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: $color-bg;
+	font-family: "Arial" sans-serif;
+	font-size: 13px;
+	line-height: 1.5em;
+}
+
+ul, li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+em {
+	font-style: bold;
+	color: $color-1;
+}
+
+#container {
+	width: 85%;
+	margin: 50px auto;
+	max-width: 900px;
+}
+
+.tbl-block {
+	float: left;
+	
+	@if $columns == 4 {
+		width: 23%;	
+	} @else if $columns == 3 {
+		width: 30%;
+	} @else {
+		width: 23%;	
+	}
+
+	margin: 0 1% 10px 1%;
+	box-sizing: border-box;
+	background: $blk-color-bg;
+	overflow: hidden;
+	h3 {
+		background: $blk-color-hd;
+		color: white;
+		text-align: center;
+		font-size: 22px;
+		padding: 15px;	
+	}
+}
+
+.tbl-block:hover {
+	border: 5px solid $color-bg;
+}
+
+.price {
+	text-align: center;
+	padding: 20px;
+	background: $color-1;
+	color: white;
+	span {
+		font-size: 25px;
+		font-weight: bold;	
+	}
+}
+
+.features {
+	li {
+		line-height: 2em;
+		text-align: center;
+		padding: 10px 0;	
+	}
+	em {
+		font-weight: bold;	
+	}
+	li:nth-child(odd) {
+		background: #e5e5e5;	
+	}
+}
+
+a.btn {
+	padding: 7px 10px;
+	border: 1px solid #ccc;
+	display: block;
+	width: 40%;
+	margin: 5px auto 10px auto;
+	border-radius: 5px;
+	text-align: center;
+}
+
+a.btn-primary {
+	background: $color-2;
+	color: white;
+}
+
+a.btn-primary:hover {
+	background: $color-2-hover;
+	color: white;
+}
+
+/* Featured Package */
+.highlight {
+	height: 520px;
+	margin-top: -30px;
+	border: 4px solid white;
+	a.btn {
+		margin-top: 7px;	
+	}
+	li {
+		padding: 12px !important;	
+	}
+}
+
+@media (max-width: 768px) {
+	@import "mobile.scss";
+}

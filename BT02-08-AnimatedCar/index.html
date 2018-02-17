@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>U12-08-AnimatedCar</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('#car-body').click(function () {
+					$('body').toggleClass('pause');
+					$('#wheel-front').toggleClass('pause');
+					$('#wheel-back').toggleClass('pause');
+				});
+			});
+		</script>
+	</head>
+	
+	<body>
+		<div id="container">
+			<div id="car-body"></div>
+			<div id="wheel-front"></div>
+			<div id="wheel-back"></div>
+		</div>
+	</body>
+</html>
