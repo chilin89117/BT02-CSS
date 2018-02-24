@@ -95,7 +95,7 @@ ul.thumbs li a:hover span:before{
 }
 
 /* Animation for slider */
-@-webkit-keyframes 'slide'{
+@keyframes slide {
 	0% 		{left: -500px;}
 	10%		{left: -250px;}
 	20%		{left: 0px;}
@@ -106,7 +106,7 @@ ul.thumbs li a:hover span:before{
 	70%		{left: -16px;}
 	80%		{left: 0px;}
 	90%		{left: 8px}
-	100%		{left: 0}
+	100%	{left: 0}
 }
 
 ul.slides li:target{
@@ -116,7 +116,7 @@ ul.slides li:target{
 }
 
 /* Not Target */
-@-webkit-keyframes 'noTarget'{
+@keyframes noTarget {
 	0%			{z-index:75;}
 	100%		{z-index:75;}
 }
